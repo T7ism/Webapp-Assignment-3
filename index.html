@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <button style="margin-left: 400px;" onclick="document.location='pdfs.html'">Books</button>
+        <h1>PDF Library</h1>
+        <!-- Form for uploading PDF -->
+        <form id="uploadForm" action="upload.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="pdfFile" required>
+            <input type="text" name="title" placeholder="Title" required>
+            <input type="text" name="author" placeholder="Author" required>
+            <button type="submit">Upload PDF</button>
+        </form>
+    </div>
+
+</body>
+</html>
